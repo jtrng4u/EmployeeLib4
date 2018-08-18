@@ -21,4 +21,8 @@ public class EmployeeOperationsImpl implements EmployeeOperations {
 		return null;
 	}
 
+	public void createEmployee(Employee emp) {
+		employees.add(emp);
+	}
+
 }

@@ -1,19 +1,16 @@
 package trng.imcs.maven.pojo;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
+@AllArgsConstructor
 public class Employee {
 
 	private int empNo;
 	private String name;
-
-	public Employee(int empNo, String name) {
-		super();
-		this.empNo = empNo;
-		this.name = name;
-	}
-
-	public int getEmpNo() {
-		return empNo;
-	}
 
 	@Override
 	public String toString() {
