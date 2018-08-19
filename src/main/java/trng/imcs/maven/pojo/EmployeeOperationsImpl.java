@@ -7,12 +7,23 @@ public class EmployeeOperationsImpl implements EmployeeOperations {
 	List<Employee> employees;
 
 	public EmployeeOperationsImpl() {
-		employees.add(new Employee(123, "Raj"));
 		employees.add(new Employee(124, "David"));
-		employees.add(new Employee(125, "John"));
+		employees.add(new Employee(400, "John"));
 	}
 
 	public Employee getEmployee(int empId) {
-		return employees.get(0);
+		for (Employee e : employees) {
+			if (e.getEmpNo() == empId) {
+				System.out.println("Testing...");
+				return e;
+			}
+		}
+		
+		return null;
+	}
+
+
+	public void test() {
+	
 	}
 }
