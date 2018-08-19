@@ -13,16 +13,6 @@ public class EmployeeOperationsImpl implements EmployeeOperations {
 	}
 
 	public Employee getEmployee(int empId) {
-		for (Employee e : employees) {
-			if (e.getEmpNo() == empId) {
-				return e;
-			}
-		}
-		return null;
+		return employees.get(0);
 	}
-
-	public void createEmployee(Employee emp) {
-		employees.add(emp);
-	}
-
 }
